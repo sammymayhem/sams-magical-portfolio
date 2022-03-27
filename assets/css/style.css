@@ -5,8 +5,9 @@
 }
 
 body {
-    background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif, serif;
+    background-color: rgb(85, 85, 85);
+    color: white;
 }
 
 header {
@@ -20,12 +21,23 @@ header {
     color: var(--orange);
   }
 
-h2  {
+h2, h3  {
     font-size: 1.5rem;
 }
 
 li {
     padding: 10px;
+}
+
+footer {
+    display: block;
+    background-color: var(--blue);
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    color: white;
+    font-size: 1.0rem;
 }
 
 .navbar {
@@ -52,30 +64,64 @@ li {
     color: var(--orange);
 }
 
-#about-me {
-    padding-top: 20px;
-    color: var(--blue);
-    text-align: center;
+.subtitle {
+    padding-right: 20px;
+    padding-bottom: 5px;
 }
 
-#about-me .about-title {
+.section-title {
     padding-bottom: 10px;
     text-align: left;
+    border-bottom: 5px solid white;
+    position: relative;
 }
+
+#about-me {
+    padding: 20px 10px 20px 10px;
+    text-align: center; 
+}
+
+
 
 .work {
     display: flex;
     flex: wrap;
-    border: 5px solid lightblue;
     padding: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.contant-me {
-    color: var(--grey);
+#work-container {
+    border-block-end-width: inherit;
+    padding-bottom: 10px;
+
+}
+
+.work img {
+    opacity: 70%;
+}
+
+.work img:hover {
+    opacity: 100%;
+
+}
+
+.work-header {
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    border: 20px solid lightblue;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.work img {
+    border: 5px solid lightblue;
 }
 
 @media screen and (max-width: 768px) {
-    #about-me .about-title {
+    .section-title {
         padding-bottom: 10px;
         text-align: center;
 
