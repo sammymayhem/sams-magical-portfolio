@@ -13,11 +13,20 @@ header {
     display: block;
     width: 100%;
     margin: 0;
+    padding-top: 20px;
     font-size: 2.5rem;
     text-align: center;
     background-color: var(--blue);
     color: var(--orange);
   }
+
+h2  {
+    font-size: 1.5rem;
+}
+
+li {
+    padding: 10px;
+}
 
 .navbar {
     display: block;
@@ -31,4 +40,44 @@ header {
 .navbar .nav-link {
     display: inline-flex;
     padding: 6px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.title-image {
+    display: block;
+    padding-top: 20px;
+    text-align: right;
+    background-color: var(--blue);
+    color: var(--orange);
+}
+
+#about-me {
+    padding-top: 20px;
+    color: var(--blue);
+    text-align: center;
+}
+
+#about-me .about-title {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.work {
+    display: flex;
+    flex: wrap;
+    border: 5px solid lightblue;
+    padding: 5px;
+}
+
+.contant-me {
+    color: var(--grey);
+}
+
+@media screen and (max-width: 768px) {
+    #about-me .about-title {
+        padding-bottom: 10px;
+        text-align: center;
+
+    }
 }
