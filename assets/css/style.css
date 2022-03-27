@@ -2,11 +2,12 @@
     --blue: rgb(21, 69, 211);
     --orange: rgb(245, 171, 33);
     --grey: rgb(48, 47, 47);
+    --darkgrey: rgb(85, 85, 85)
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif, serif;
-    background-color: rgb(85, 85, 85);
+    background-color: var(--darkgrey);
     color: white;
 }
 
@@ -76,7 +77,7 @@ footer {
     position: relative;
 }
 
-#about-me {
+#about-me, #work-cards, #contact-me {
     padding: 20px 10px 20px 10px;
     text-align: center; 
 }
@@ -92,11 +93,11 @@ footer {
     color: white;
 }
 
-#work-container {
+/* #work-cards {
     border-block-end-width: inherit;
     padding-bottom: 10px;
 
-}
+} */
 
 .work img {
     opacity: 70%;
@@ -120,10 +121,36 @@ footer {
     border: 5px solid lightblue;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .section-title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        position: relative;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        text-align: right;
+    }
+    
+    .header {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .section-title {
         padding-bottom: 10px;
-        text-align: center;
-
+        text-align: left;
+        border-bottom: 5px solid white;
+        position: relative;
     }
 }
