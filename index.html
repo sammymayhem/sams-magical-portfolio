@@ -6,26 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sams Magical Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/style1.css">
 </head>
 
 <body>
     <header>
-        <div class="header header-nav">
+        <section class="header">
             <div class="title">
                 <h1>Sam Wallace</h1>
             </div>
             <nav class="navbar">
-                <ul class="nav-link">
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#work-section">Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-me">Contact Me</a>
+                <a href="#">Resume</a>
             </nav>
-        </div>
-        
+        </section>
+
     </header>
 
     <figure class="title-image">
@@ -33,63 +31,82 @@
         <h2 class="subtitle">May the source be with you</h2>
     </figure>
 
-    <main>
+    <main class="container">
         <section id="about-me">
-            <h2 class="section-title">About Me</h2>
-            <img src="./assets/images/sam.JPG" width="200" height="350">
-            <p>Hey everybody, my name is Sam Wallace. Born and raised in San Diego I have worn many hats in my career. After spending 16 years helping the San Diego Comic-Con grow to where it is today, I decided to break off and start a new path. I hope you enjoy your time on my portfolio page!</p>
+
+            <div class="left-side">
+                <h2>About Me</h2>
+            </div>
+            <div class="right-side">
+                <p>Hey everybody, my name is Sam Wallace. Born and raised in San Diego I have worn many hats in my
+                    career.
+                    After spending 16 years helping the San Diego Comic-Con grow to where it is today, I decided to
+                    break
+                    off and start a new path. I hope you enjoy your time on my portfolio page!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem nam maxime quod at recusandae minus
+                    ut error sapiente sint facere?</p>
+            </div>
+
         </section>
 
-        <section id="work-section">
-                <h2 class="section-title">Work</h2>
-            <div id="work-cards">
-
-            <div class="project">
-                <figure class="work">
-                    <h3 class="work-header">Project 1</h3>
-                    <img class="work-image" src="./assets/images/900x800.png">
-                </figure>
+        <section id="work">
+            <div class="left-side">
+                <h2>Work</h2>
             </div>
 
-            <div class="project">
-                <figure class="work"><a href="#"></a>
-                    <h3 class="work-header">Project 2</h3>
-                    <img src="./assets/images/900x800.png">
-                </figure>
-            </div>
+            <div class="right-side">
 
-            <div class="project">
-                <figure class="work">
-                    <h3 class="work-header">Project 3</h3>
-                    <img src="./assets/images/900x800.png">
-                </figure>
-            </div>
+                <div class="project">
+                    <figure class="work">
+                        <h3 class="work-header">Project 1</h3>
+                        <img class="work-image" src="./assets/images/900x800.png">
+                    </figure>
+                </div>
 
-            <div class="project">
-                <figure class="work">
-                    <h3 class="work-header">Project 4</h3>
-                    <img src="./assets/images/900x800.png">
-                </figure>
-            </div>
+                <div class="project">
+                    <figure class="work"><a href="#"></a>
+                        <h3 class="work-header">Project 2</h3>
+                        <img src="./assets/images/900x800.png">
+                    </figure>
+                </div>
 
-            <div class="project">
-                <figure class="work">
-                    <h3 class="work-header">Project 5</h3>
-                    <img src="./assets/images/900x800.png">
-                </figure>
-            </div>
+                <div class="project">
+                    <figure class="work">
+                        <h3 class="work-header">Project 3</h3>
+                        <img src="./assets/images/900x800.png">
+                    </figure>
+                </div>
+
+                <div class="project">
+                    <figure class="work">
+                        <h3 class="work-header">Project 4</h3>
+                        <img src="./assets/images/900x800.png">
+                    </figure>
+                </div>
+
+                <div class="project">
+                    <figure class="work">
+                        <h3 class="work-header">Project 5</h3>
+                        <img src="./assets/images/900x800.png">
+                    </figure>
+                </div>
+
             </div>
         </section>
 
-        <footer id="contact-me">
-            <h2 class="section-title">Contact Me</h2>
-            <ul>
-                <li><a href="tel:619-395-6621"> 619-395-6621</a></li>
-                <li> <a href="mailto: sam@sammymayhem.com">sam@sammymayhem.com</a></li>
-                <li><a href="https://github.com/sammymayhem">GitHub</a></li>
-                <li><a href="https://www.twitter.com/sammymayhem">Twitter</a></li>
-            </ul>
-        </footer>
+        <section id="contact-me">
+            <div class="left-side">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="right-side">
+                <nav class="bottom-nav">
+                    <a href="tel:619-395-6621"> 619-395-6621</a>
+                    <a href="mailto: sam@sammymayhem.com">sam@sammymayhem.com</a>
+                    <a href="https://github.com/sammymayhem">GitHub</a>
+                    <a href="https://www.twitter.com/sammymayhem">Twitter</a>
+                </nav>
+            </div>
+        </section>
 
     </main>
 </body>
