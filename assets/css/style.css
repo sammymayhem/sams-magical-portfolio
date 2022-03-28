@@ -54,7 +54,11 @@ footer {
     display: inline-flex;
     padding: 6px;
     justify-content: space-between;
-    position: relative;
+}
+
+.nav-link a {
+    text-decoration: none;
+    border-bottom: 5px solid white;
 }
 
 .title-image {
@@ -62,7 +66,9 @@ footer {
     padding-top: 20px;
     text-align: right;
     background-color: var(--blue);
-    color: var(--orange);
+    color: white;
+    background-image: url(https://learn.canva.com/wp-content/uploads/2020/02/removing-background-images_Unsplash.jpeg);
+    background-repeat: no-repeat;
 }
 
 .subtitle {
@@ -74,30 +80,31 @@ footer {
     padding-bottom: 10px;
     text-align: left;
     border-bottom: 5px solid white;
-    position: relative;
 }
 
 #about-me, #work-cards, #contact-me {
     padding: 20px 10px 20px 10px;
-    text-align: center; 
 }
 
+#about-me, #contact-me {
+    text-align: center;
+}
 
+#work-cards {
+    display: flex;
+    flex-wrap: wrap
+
+
+}
 
 .work {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     padding: 5px;
     position: relative;
     text-align: center;
     color: white;
 }
-
-/* #work-cards {
-    border-block-end-width: inherit;
-    padding-bottom: 10px;
-
-} */
 
 .work img {
     opacity: 70%;
@@ -121,6 +128,18 @@ footer {
     border: 5px solid lightblue;
 }
 
+.project {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+#contact-me a {
+    text-decoration: none;
+    border-bottom: 5px solid white;
+    padding-bottom: 3px;
+}
+
+
 @media screen and (min-width: 768px) {
     .section-title {
         padding-top: 10px;
@@ -129,28 +148,37 @@ footer {
         position: relative;
 
     }
+
+    #work-cards {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 992px) {
-    nav {
-        text-align: right;
-    }
-    
     .header {
         width: 95%;
         margin: 0 auto;
+    }
+    
+    .navbar {
+        background-color: var(--blue);
     }
 
     .header-nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
     }
 
     .section-title {
+        border-bottom: 0;
         padding-bottom: 10px;
         text-align: left;
-        border-bottom: 5px solid white;
+    }
+
+    #work-cards, #about-me, #contact-me {
+        border-left: 5px solid white;
         position: relative;
     }
 }
+
