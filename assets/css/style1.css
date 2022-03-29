@@ -1,6 +1,7 @@
 :root {
-    --lightgrey: #e5e5e5;
-    --teal: #0a9396;
+    --primary: #3d405b;
+    --secondary: #e07a5f;
+    ---light: #f4f1de;
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 body {
-    background-color: var(--lightgrey);
+    background-color: var(--light);
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -20,16 +21,16 @@ p {
 }
 
 header {
-    background-color: var(--teal);
+    background-color: var(--primary);
     padding: 2em 0;
 }
 
 h1 {
     padding-left: 30px;
     font-size: 32px;
-    border: 10px solid var(--lightgrey);
-    background-color: var(--lightgrey);
-    color: var(--teal);
+    border: 10px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 .header {
@@ -43,6 +44,11 @@ h1 {
 
 a {
     padding: 0 10px;
+    color: var(--secondary);
+}
+
+.title-image {
+
 }
 
 .container {
@@ -62,7 +68,7 @@ section h2 {
 
 .left-side {
     width: 15%;
-    border-right: 5px solid var(--teal);
+    border-right: 5px solid var(--primary);
 }
   
 .right-side {
@@ -81,7 +87,7 @@ section h2 {
     display: flex;
     flex: 1 1 45%;
     text-align: left;
-    border: 5px solid var(--teal);
+    border: 5px solid var(--primary);
     margin: 10px;
     height: 180px;
   }
@@ -98,9 +104,9 @@ section h2 {
     display: block;
     position: absolute;
     z-index: 1;
-    border: 5px solid var(--teal);
-    background-color: var(--teal);
-    color: var(--lightgrey);
+    border: 5px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
     padding: 20px;
     bottom: 20px;
 }
@@ -111,6 +117,10 @@ section h2 {
 
 ul {
     list-style: none;
+}
+
+li {
+    display: inline;
 }
 
 
