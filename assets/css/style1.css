@@ -12,6 +12,7 @@
 body {
     background-color: var(--lightgrey);
     font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 p {
@@ -61,7 +62,7 @@ section h2 {
 
 .left-side {
     width: 15%;
-    border-right: 4px solid var(--teal);
+    border-right: 5px solid var(--teal);
 }
   
 .right-side {
@@ -76,18 +77,24 @@ section h2 {
 }
 
 .work-card {
+    position: relative;
     display: flex;
     flex: 1 1 45%;
     text-align: left;
     border: 5px solid var(--teal);
+    margin: 10px;
+    height: 180px;
   }
+
+.work-card.featured {
+    height: 300px;
+}
 
 .work-card img {
     width: 100%;
-    min-width: 400px;
 }
 
-.work-card h3 {
+.work-card .work-title {
     display: block;
     position: absolute;
     z-index: 1;
@@ -95,6 +102,11 @@ section h2 {
     background-color: var(--teal);
     color: var(--lightgrey);
     padding: 20px;
+    bottom: 20px;
+}
+
+.work-card .work-title h5 {
+    font-weight: normal;
 }
 
 ul {
@@ -108,6 +120,11 @@ ul {
 
 .bottom-nav li {
     padding: 0 40px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
