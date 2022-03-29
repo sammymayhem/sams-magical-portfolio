@@ -1,3 +1,8 @@
+:root {
+    --lightgrey: #e5e5e5;
+    --teal: #0a9396;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-    background-color: #e5e5e5;
+    background-color: var(--lightgrey);
     font-size: 16px;
 }
 
@@ -14,16 +19,16 @@ p {
 }
 
 header {
-    background-color: #0a9396;
+    background-color: var(--teal);
     padding: 2em 0;
 }
 
 h1 {
     padding-left: 30px;
     font-size: 32px;
-    border: 10px solid #e5e5e5;
-    background-color: #e5e5e5;
-    color: #0a9396;
+    border: 10px solid var(--lightgrey);
+    background-color: var(--lightgrey);
+    color: var(--teal);
 }
 
 .header {
@@ -32,6 +37,7 @@ h1 {
 
 .navbar {
     align-items: right;
+    padding-right: 20px;
 }
 
 a {
@@ -55,7 +61,7 @@ section h2 {
 
 .left-side {
     width: 15%;
-    border-right: 4px solid #0a9396;
+    border-right: 4px solid var(--teal);
 }
   
 .right-side {
