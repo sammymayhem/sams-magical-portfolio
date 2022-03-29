@@ -48,7 +48,15 @@ a {
 }
 
 .title-image {
+    background-image: url(../images/header-image.jpeg);
+    background-repeat: no-repeat;
+    text-align: right;
+    padding: 20px;
+}
 
+.title-image h2 {
+    padding-right: 15px;
+    color: var(--primary);
 }
 
 .container {
@@ -69,6 +77,7 @@ section h2 {
 .left-side {
     width: 15%;
     border-right: 5px solid var(--primary);
+    color: var(--primary);
 }
   
 .right-side {
