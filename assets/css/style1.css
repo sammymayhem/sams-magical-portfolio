@@ -45,7 +45,7 @@ a {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -76,8 +76,8 @@ section h2 {
 }
 
 .work-card {
+    display: flex;
     flex: 1 1 45%;
-    padding: 10px;
     text-align: left;
     border: 5px solid var(--teal);
   }
@@ -87,11 +87,26 @@ section h2 {
     min-width: 400px;
 }
 
+.work-card h3 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border: 5px solid var(--teal);
+    background-color: var(--teal);
+    color: var(--lightgrey);
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+
 .bottom-nav {
     align-items: right; 
 }
 
-.bottom-nav a {
+.bottom-nav li {
     padding: 0 40px;
 }
 
