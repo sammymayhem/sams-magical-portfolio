@@ -15,7 +15,15 @@ p {
 
 header {
     background-color: #0a9396;
-    padding: 1em 0;
+    padding: 2em 0;
+}
+
+h1 {
+    padding-left: 30px;
+    font-size: 32px;
+    border: 10px solid #e5e5e5;
+    background-color: #e5e5e5;
+    color: #0a9396;
 }
 
 .header {
@@ -46,16 +54,28 @@ section h2 {
 }
 
 .left-side {
-    width: 30%;
+    width: 15%;
     border-right: 4px solid #0a9396;
-  }
+}
   
 .right-side {
-    width: 70%;
+    width: 85%;
     padding-left: 30px; 
-  }
+}
 
-  .bottom-nav {
-      align-items: right;
-  }
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.bottom-nav {
+    align-items: right; 
+}
+
+.bottom-nav a {
+    padding: 0 40px;
+}
+
+
 
