@@ -75,6 +75,18 @@ section h2 {
     padding-top: 5px;
 }
 
+.work-card {
+    flex: 1 1 45%;
+    padding: 10px;
+    text-align: left;
+    border: 5px solid var(--teal);
+  }
+
+.work-card img {
+    width: 100%;
+    min-width: 400px;
+}
+
 .bottom-nav {
     align-items: right; 
 }
