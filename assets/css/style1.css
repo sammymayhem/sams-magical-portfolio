@@ -215,7 +215,7 @@ li {
 
 @media screen and (max-width: 480px) {
     .navbar {
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
         align-items: center;
     }
