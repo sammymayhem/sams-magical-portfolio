@@ -78,13 +78,13 @@ section h2 {
 .left-side {
     padding-left: 10px;
     font-size: 28px;
-    width: 15%;
+    width: 25%;
     border-right: 5px solid var(--primary);
     color: var(--primary);
 }
   
 .right-side {
-    width: 85%;
+    width: 75%;
     padding-left: 30px; 
 }
 
@@ -141,7 +141,7 @@ li {
 }
 
 .bottom-nav li {
-    padding: 0 40px;
+    padding: 0 15px;
 }
 
 #projects {
@@ -149,7 +149,7 @@ li {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
     header {
         background-color: var(--secondary);
     }
@@ -191,13 +191,42 @@ li {
         text-align: center;
     }
 
+    .right-side {
+        align-items: center;
+    }
+
     .bottom-nav ul {
         padding-bottom: 10px;
     }
 
     .bottom-nav li {
+        display: inline-flex;
+        flex-wrap: wrap;
         padding: 0;
 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .right-side {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .work-card, .work-card.featured {
+        height: 180px;
+        flex: 1 1 50%;
+    }
+
+    .bottom-nav li {
+        padding: 15px;
+        display: block;
     }
 
 
