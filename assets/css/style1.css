@@ -231,6 +231,7 @@ li {
     
     .work-card.featured {
         height: 180px;
+        flex: 1 1 50%
     }
 
     .bottom-nav li {
