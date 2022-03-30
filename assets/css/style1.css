@@ -22,7 +22,6 @@ p {
 
 header {
     background-color: var(--primary);
-    padding: 2em 0;
 }
 
 h1 {
@@ -43,7 +42,9 @@ h1 {
 }
 
 a {
-    padding: 0 10px;
+    text-decoration: none;
+    border-bottom: 5px solid var(--secondary);
+    padding: 5px 10px;
     color: var(--secondary);
 }
 
@@ -75,6 +76,8 @@ section h2 {
 }
 
 .left-side {
+    padding-left: 10px;
+    font-size: 28px;
     width: 15%;
     border-right: 5px solid var(--primary);
     color: var(--primary);
@@ -144,6 +147,60 @@ li {
 #projects {
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        background-color: var(--secondary);
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        background-color: var(--primary);
+        padding: 20px 0;
+    }
+
+    nav > a {
+        border-bottom: 5px solid var(--secondary);
+        text-align: center;
+        margin-left: 45px;
+    }
+
+    .container {
+        padding: 0px 20px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section h2 {
+        text-align: left;
+    }
+
+    .left-side {
+        width: 100%;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 5px solid var(--primary);
+        text-align: center;
+    }
+
+    .bottom-nav ul {
+        padding-bottom: 10px;
+    }
+
+    .bottom-nav li {
+        padding: 0;
+
+    }
+
+
 }
 
 
