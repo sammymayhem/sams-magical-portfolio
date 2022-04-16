@@ -41,7 +41,7 @@ h1 {
     padding-right: 20px;
 }
 
-a {
+#navhead {
     text-decoration: none;
     border-bottom: 5px solid var(--secondary);
     padding: 5px 10px;
@@ -153,6 +153,23 @@ li {
 #projects {
     display: flex;
     flex-wrap: wrap;
+}
+
+#project-1 {
+    background-image: url("../images/current-tab.png");
+}
+
+#project-2 {
+    background-image: url("../images/pw-gen.png");
+}
+
+#project-3 {
+    background-image: url("../images/planner.png");
+}
+
+#project-link {
+    text-decoration: none;
+    color: var(--secondary);
 }
 
 @media screen and (max-width: 768px) {
