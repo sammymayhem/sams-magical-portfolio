@@ -2,6 +2,11 @@
     --primary: #3d405b;
     --secondary: #e07a5f;
     ---light: #f4f1de;
+
+    --primary2: #293241;
+    --secondary2: #ee6c4d;
+    --text: #e0fbfc;
+    --body: #0d3b66;
 }
 
 * {
@@ -11,7 +16,8 @@
 }
 
 body {
-    background-color: var(--light);
+    background-color: var(--primary);
+    color: var(--text);
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -21,15 +27,15 @@ p {
 }
 
 header {
-    background-color: var(--primary);
+    background-color: var(--primary2);
 }
 
 h1 {
     padding-left: 30px;
     font-size: 32px;
-    border: 10px solid var(--secondary);
-    background-color: var(--secondary);
-    color: var(--primary);
+    border: 10px solid var(--secondary2);
+    background-color: var(--secondary2);
+    color: var(--primary2);
 }
 
 .header {
@@ -43,9 +49,9 @@ h1 {
 
 #navhead {
     text-decoration: none;
-    border-bottom: 5px solid var(--secondary);
+    border-bottom: 5px solid var(--secondary2);
     padding: 5px 10px;
-    color: var(--secondary);
+    color: var(--secondary2);
 }
 
 .title-image {
@@ -57,7 +63,7 @@ h1 {
 
 .title-image h2 {
     padding-right: 15px;
-    color: var(--primary);
+    color: var(--primary2);
 }
 
 .container {
@@ -79,14 +85,18 @@ section h2 {
     padding-left: 10px;
     font-size: 28px;
     width: 25%;
-    border-right: 5px solid var(--primary);
-    color: var(--primary);
+    border-right: 5px solid var(--secondary2);
+    color: var(--secondary2);
 }
 
 .my-image {
     float: left;
     margin-right: 10px;
     padding-top: 10px;
+}
+
+#profile-image {
+    width: 250px;
 }
   
 .right-side {
@@ -105,7 +115,7 @@ section h2 {
     display: flex;
     flex: 1 1 45%;
     text-align: left;
-    border: 5px solid var(--primary);
+    border: 5px solid var(--primary2);
     margin: 10px;
     height: 180px;
   }
@@ -122,9 +132,9 @@ section h2 {
     display: block;
     position: absolute;
     z-index: 1;
-    border: 5px solid var(--primary);
-    background-color: var(--primary);
-    color: var(--secondary);
+    border: 5px solid var(--primary2);
+    background-color: var(--primary2);
+    color: var(--secondary2);
     padding: 20px;
     bottom: 20px;
 }
@@ -150,6 +160,13 @@ li {
     padding: 0 15px;
 }
 
+.bottom-nav a {
+    text-decoration: none;
+    border-bottom: 5px solid var(--secondary2);
+    padding: 5px 10px;
+    color: var(--secondary2);
+}
+
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -169,12 +186,13 @@ li {
 
 #project-link {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--secondary2);
 }
+
 
 @media screen and (max-width: 768px) {
     header {
-        background-color: var(--secondary);
+        background-color: var(--secondary2);
     }
     
     .header {
@@ -184,12 +202,12 @@ li {
     }
 
     .navbar {
-        background-color: var(--primary);
+        background-color: var(--primary2);
         padding: 20px 0;
     }
 
     nav > a {
-        border-bottom: 5px solid var(--secondary);
+        border-bottom: 5px solid var(--secondary2);
         text-align: center;
         margin-left: 45px;
     }
@@ -210,7 +228,7 @@ li {
         width: 100%;
         flex-direction: column;
         border-right: none;
-        border-bottom: 5px solid var(--primary);
+        border-bottom: 5px solid var(--secondary2);
         text-align: center;
     }
 
@@ -240,6 +258,14 @@ li {
     .right-side {
         width: 100%;
         padding-left: 0;
+    }
+
+    .left-side {
+        width: 100%;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 5px solid var(--secondary2);
+        text-align: center;
     }
 
     .my-image {
