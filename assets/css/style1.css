@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--primary);
+    background-color: var(--primary2);
     color: var(--text);
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -55,7 +55,7 @@ h1 {
 }
 
 .title-image {
-    background-image: url(../images/header-image.jpeg);
+    background-image: url(../images/space-header.jpeg);
     background-repeat: no-repeat;
     text-align: right;
     padding: 20px;
@@ -63,7 +63,7 @@ h1 {
 
 .title-image h2 {
     padding-right: 15px;
-    color: var(--primary2);
+    color: var(--text);
 }
 
 .container {
@@ -115,7 +115,7 @@ section h2 {
     display: flex;
     flex: 1 1 45%;
     text-align: left;
-    border: 5px solid var(--primary2);
+    border: 5px solid var(--primary);
     margin: 10px;
     height: 180px;
     cursor: pointer;
@@ -134,8 +134,8 @@ section h2 {
     display: block;
     position: absolute;
     z-index: 1;
-    border: 5px solid var(--primary2);
-    background-color: var(--primary2);
+    border: 5px solid var(--primary);
+    background-color: var(--primary);
     color: var(--secondary2);
     padding: 20px;
     bottom: 20px;
